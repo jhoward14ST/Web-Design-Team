@@ -160,7 +160,7 @@ h4 {
 -- */
 /* ---------------------- HEADER STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
--- 2022-02-17 - Jared Howard – Section created.
+-- 2022-02-17 - Jared Howard – Section created and navigation text style added
 -------------------------- END OF CHANGES ------------------------ */
 
 nav {
@@ -169,16 +169,44 @@ nav {
     background-color: white
 }
 
-nav ul {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white;
-    color: black;
-}
+    nav ul {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: white;
+        color: black;
+    }
 
-nav ul li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white;
-    color: black;
-}
+        nav ul li {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: white;
+            color: black;
+        }
 
 /* ------------------------ END OF HEADER STYLING --------------------- */
+
+/* ------------------------- FOOTER STYLING ---------------------------
+-- DESCRIPTION: Formatting section for page headers.
+-- */
+/* ---------------------- FOOTER STYLING CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-17 - Jared Howard – Section created and navigation text style added
+-------------------------- END OF CHANGES ------------------------ */
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: white
+}
+
+    nav ul {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: white;
+        color: black;
+    }
+
+        nav ul li {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+/* ------------------------ END OF FOOTER STYLING --------------------- */

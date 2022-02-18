@@ -15,13 +15,12 @@
 ///////////////////////// CHANGE HISTORY /////////////////////////////
 //
 // Date ------- Developer ---- Description
-// 2022-02-17 – Jared Howard - File created and committed to GitHub
+// 2022-02-17 – Jared Howard - File created and committed to GitHub. Header code started, Javascript functionality added for navigation. Footer code added, JS functionality set up.
 //
 **************************** JAVASCRIPT ******************************
 **
-** id: functionName – Description of what this JS function does
-** id: functionName - Description of what this JS function does
-** id: functionName - Description of what this JS function does
+** id: imageClick(url) – Button for directing user to the specified page when they click
+**
 **-->
 <!DOCTYPE html>
 
@@ -32,7 +31,43 @@
     <meta charset="utf-8" />
     <title>How-it-works</title>
 </head>
+
 <body>
-    This is a test. Will later become the How it works page.
+    <!-- *********** JS imageClick(url) *********** -->
+    <script>
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+        function imageClick(url) {
+            window.location = url;
+        }
+    </script>
+    <header>
+        <nav>
+            <ul>
+                <!-- *********** JS imageClick(url) *********** -->
+                <li><button onclick="imageClick('../home.html')">Home</button></li>
+                <li><button onclick="imageClick('../about.html')">About</button></li>
+                <li><button onclick="imageClick('../how-it-works.html')">How it works</button></li>
+                <li><button onclick="imageClick('../faq.html')">FAQ</button></li>
+                <li><button onclick="imageClick('../contact.html')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ZULALUREMAN your how it works code will be posted below this comment -->
+
+    <p>This is a test. Will become the home page later.</p>
+    <!-- *********** JS imageClick(url) *********** -->
+    <footer>
+        <nav>
+            <ul>
+                <li><button onclick="imageClick('../about.html')">About</button></li>
+                <li><button onclick="imageClick('../contact.html')">Contact</button></li>
+                <li><button onclick="imageClick(https://www.instagram.com/pure.rae.cooking)">Folllow</button></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
