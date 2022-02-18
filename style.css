@@ -23,6 +23,16 @@
 -- Date ------- Developer ---- Description
 -- 2022-02-15 - Jared Howard – Section created and first examples written.
 -------------------------- END OF CHANGES ------------------------ */
+#prc {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
 #pic1 {
     align-self: center;
     width: 100%;
@@ -133,8 +143,35 @@
 -- 2022-02-17 - Jared Howard – Section created and text styling added for body and h1-4
 -------------------------- END OF CHANGES ------------------------ */
 
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+    a:link, a:visited, a:hover, a:active {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: palegreen
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: palegreen;
 }
 
 h1 {
@@ -153,6 +190,11 @@ h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
 /* ------------------------ END OF TEXT STYLING --------------------- */
 
 /* ------------------------- HEADER STYLING ---------------------------
@@ -160,24 +202,33 @@ h4 {
 -- */
 /* ---------------------- HEADER STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
--- 2022-02-17 - Jared Howard – Section created and navigation text style added
+-- 2022-02-17 - Jared Howard – Section created and navigation text style added. Added a green background to test color.
 -------------------------- END OF CHANGES ------------------------ */
 
 nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
     height: auto;
-    background-color: white
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+    background-color: palegreen;
 }
 
     nav ul {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: white;
+        background-color: palegreen;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
         color: black;
     }
 
         nav ul li {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color: white;
+            display: inline-block;
+            background-color: palegreen;
             color: black;
         }
 
@@ -191,22 +242,5 @@ nav {
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added
 -------------------------- END OF CHANGES ------------------------ */
 
-nav {
-    width: 100%;
-    height: auto;
-    background-color: white
-}
-
-    nav ul {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: white;
-        color: black;
-    }
-
-        nav ul li {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color: white;
-            color: black;
-        }
 
 /* ------------------------ END OF FOOTER STYLING --------------------- */

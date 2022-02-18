@@ -15,55 +15,42 @@
 ///////////////////////// CHANGE HISTORY /////////////////////////////
 //
 // Date ------- Developer ---- Description
-// 2022-02-17 – Jared Howard - File created and committed to GitHub. Header code started, Javascript functionality added for navigation. Footer code added, JS functionality set up.
+// 2022-02-17 – Jared Howard - File created and committed to GitHub. Header code started, a href functionality added for navigation. Footer code added.
 //
 **************************** JAVASCRIPT ******************************
 **
-** id: imageClick(url) – Button for directing user to the specified page when they click
+** id: FUNCTIONNAME - Description
 **
 **-->
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Jared: base stylesheet link added. Will need to calibrate later -->
-    <link href="css/style.css" rel="stylesheet" />
+    <!-- Jared: base stylesheet link added and functional -->
+    <link href="../TeamH/style.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <title>About</title>
 </head>
 
 <body>
-    <!-- *********** JS imageClick(url) *********** -->
-    <script>
-        $(".hover").mouseleave(
-            function () {
-                $(this).removeClass("hover");
-            }
-        );
-        function imageClick(url) {
-            window.location = url;
-        }
-    </script>
     <header>
         <nav>
             <ul>
-                <!-- *********** JS imageClick(url) *********** -->
-                <li><button onclick="imageClick('../home.html')">Home</button></li>
-                <li><button onclick="imageClick('../about.html')">About</button></li>
-                <li><button onclick="imageClick('../how-it-works.html')">How it works</button></li>
-                <li><button onclick="imageClick('../faq.html')">FAQ</button></li>
-                <li><button onclick="imageClick('../contact.html')">Contact</button></li>
+                <li><a href="../TeamH/home.html">Home</a></li>
+                <li><a href="../TeamH/about.html">About</a></li>
+                <li><a href="../TeamH/how-it-works.html">How it works</a></li>
+                <li><a href="../TeamH/faq.html">FAQ</a></li>
+                <li><a href="../TeamH/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <p>This is a test. Will become the home page later.</p>
-    <!-- *********** JS imageClick(url) *********** -->
     <footer>
         <nav>
             <ul>
-                <li><button onclick="imageClick('../about.html')">About</button></li>
-                <li><button onclick="imageClick('../contact.html')">Contact</button></li>
-                <li><button onclick="imageClick(https://www.instagram.com/pure.rae.cooking)">Folllow</button></li>
+                <li><a href="../TeamH/about.html">About</a></li>
+                <li><a href="../TeamH/contact.html">Contact</a></li>
+                <li><a href="https://www.instagram.com/pure.rae.cooking">Follow</a></li>
             </ul>
         </nav>
     </footer>
