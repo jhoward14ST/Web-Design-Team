@@ -14,6 +14,7 @@
 --
 -- Date ------- Developer ---- Description
 -- 2022-02-15 – Jared Howard - Stylesheet started
+-- 2022-02-15 - Jared Howard - Styling for headers and footers completed. Worked around div elements by using some sections
 --*/
 
 /* ------------------------- SITE PHOTOS ---------------------------
@@ -23,15 +24,6 @@
 -- Date ------- Developer ---- Description
 -- 2022-02-15 - Jared Howard – Section created and first examples written.
 -------------------------- END OF CHANGES ------------------------ */
-#prc {
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
 
 #pic1 {
     align-self: center;
@@ -165,13 +157,13 @@ body {
 footer {
     width: 100%;
     padding: 10px;
-    background-color: palegreen
+    background-color: lightpink
 }
 
 header {
     width: 100%;
     padding: 10px;
-    background-color: palegreen;
+    background-color: lightpink;
 }
 
 h1 {
@@ -203,7 +195,28 @@ p {
 /* ---------------------- HEADER STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added. Added a green background to test color.
+-- 2022-02-19 - Jared Howard – Added styling IDs for the two header sections (#prc and #navigation)
 -------------------------- END OF CHANGES ------------------------ */
+
+#prc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    height: 10%;
+    padding: 0px;
+    background-color: lightpink;
+}
+
+#navigation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70%;
+    height: 10%;
+    padding: 0px;
+    background-color: lightpink;
+}
 
 nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -212,24 +225,25 @@ nav {
     text-align: center;
     display: block;
     padding: 0 10px;
-    background-color: palegreen;
+    padding-top: 4%;
+    background-color: lightpink;
 }
 
     nav ul {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: palegreen;
         padding: 0;
         margin: 0;
         list-style: none;
         position: relative;
         color: black;
+        background-color: lightpink;
     }
 
         nav ul li {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             display: inline-block;
-            background-color: palegreen;
             color: black;
+            background-color: lightpink;
         }
 
 /* ------------------------ END OF HEADER STYLING --------------------- */
@@ -240,7 +254,16 @@ nav {
 /* ---------------------- FOOTER STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added
+-- 2022-02-19 - Jared Howard – Added styling ID for page footer
 -------------------------- END OF CHANGES ------------------------ */
 
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 3%;
+    padding: 0px;
+    background-color: lightpink;
+}
 
 /* ------------------------ END OF FOOTER STYLING --------------------- */
