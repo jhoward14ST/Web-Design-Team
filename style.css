@@ -14,118 +14,9 @@
 --
 -- Date ------- Developer ---- Description
 -- 2022-02-15 – Jared Howard - Stylesheet started
--- 2022-02-15 - Jared Howard - Styling for headers and footers completed. Worked around div elements by using some sections
+-- 2022-02-18 - Jared Howard - Styling for headers and footers completed. Worked around div elements by using some sections
+-- 2022-02-19 - Jared Howard - Added a subsection for gallery photos and moved photo formatting to bottom
 --*/
-
-/* ------------------------- SITE PHOTOS ---------------------------
--- DESCRIPTION: Formatting section for site photos
--- */
-/* ---------------------- SITE PHOTOS CHANGES ----------------------
--- Date ------- Developer ---- Description
--- 2022-02-15 - Jared Howard – Section created and first examples written.
--------------------------- END OF CHANGES ------------------------ */
-
-#pic1 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic2 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic3 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic4 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic5 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic6 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic7 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic8 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic9 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-#pic10 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-/* ------------------------ END OF SITE PHOTOS --------------------- */
 
 /* ------------------------- TEXT STYLING ---------------------------
 -- DESCRIPTION: Formatting section for text
@@ -152,18 +43,19 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #EEEEEE;
 }
 
 footer {
     width: 100%;
     padding: 10px;
-    background-color: lightpink
+    background-color: #FFCFEE
 }
 
 header {
     width: 100%;
     padding: 10px;
-    background-color: lightpink;
+    background-color: #FFCFEE;
 }
 
 h1 {
@@ -205,7 +97,7 @@ p {
     width: 30%;
     height: 10%;
     padding: 0px;
-    background-color: lightpink;
+    background-color: #FFCFEE;
 }
 
 #navigation {
@@ -215,7 +107,17 @@ p {
     width: 70%;
     height: 10%;
     padding: 0px;
-    background-color: lightpink;
+    background-color: #FFCFEE;
+}
+
+#navigation2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70%;
+    height: 10%;
+    padding: 0px;
+    background-color: #FFCFEE;
 }
 
 nav {
@@ -226,7 +128,7 @@ nav {
     display: block;
     padding: 0 10px;
     padding-top: 4%;
-    background-color: lightpink;
+    background-color: #FFCFEE;
 }
 
     nav ul {
@@ -236,20 +138,20 @@ nav {
         list-style: none;
         position: relative;
         color: black;
-        background-color: lightpink;
+        background-color: #FFCFEE;
     }
 
         nav ul li {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             display: inline-block;
             color: black;
-            background-color: lightpink;
+            background-color: #FFCFEE;
         }
 
 /* ------------------------ END OF HEADER STYLING --------------------- */
 
 /* ------------------------- FOOTER STYLING ---------------------------
--- DESCRIPTION: Formatting section for page headers.
+-- DESCRIPTION: Formatting section for page footers.
 -- */
 /* ---------------------- FOOTER STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
@@ -263,7 +165,353 @@ nav {
     width: 100%;
     height: 3%;
     padding: 0px;
-    background-color: lightpink;
+    background-color: #FFCFEE;
 }
 
 /* ------------------------ END OF FOOTER STYLING --------------------- */
+
+/* ------------------------- HOME.html STYLING ---------------------------
+-- DESCRIPTION: Formatting section Home page of our site
+-- */
+/* ---------------------- HOME.html STYLING CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
+-------------------------- END OF CHANGES ------------------------ */
+
+#aboutme {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 10%;
+    background-color: #FFCFEE;
+}
+
+#customerreviews {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 15%;
+    background-color: #FFCFEE;
+}
+
+#gallery {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 10%;
+    background-color: #FFCFEE;
+}
+
+/* ------------------------ END OF HOME.html STYLING --------------------- */
+
+/* ------------------------- ABOUT.html STYLING ---------------------------
+-- DESCRIPTION: Formatting section for the About page of our site
+-- */
+/* ---------------------- ABOUT.html STYLING CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
+-------------------------- END OF CHANGES ------------------------ */
+
+#welcome {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 10%;
+    background-color: #FFCFEE;
+}
+#ourservices {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 30%;
+    background-color: #FFCFEE;
+}
+#mealpreparation {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 35%%;
+    background-color: #FFCFEE;
+}
+#catering {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    padding: 0px;
+    padding-top: 50%;
+    background-color: #FFCFEE;
+}
+
+/* ------------------------ END OF ABOUT.html STYLING --------------------- */
+
+/* ------------------------- SITE PHOTOS ---------------------------
+-- DESCRIPTION: Formatting section for site photos
+-- */
+/* ---------------------- SITE PHOTOS CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-15 - Jared Howard – Section created and first examples written.
+-- 2022-02-19 - Jared Howard – Some comments added and subsection created for a gallery.
+-------------------------- END OF CHANGES ------------------------ */
+/* Used on home page*/
+#pic1 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* Used on home page*/
+#pic2 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* Used on home page*/
+#pic3 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* Used on How it Works page*/
+#pic4 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* Used on How it Works page*/
+#pic5 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* Used on How it Works page*/
+#pic6 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* ------------------------- GALLERY SUBSECTION ---------------------------
+-- DESCRIPTION: Formatting section for photos in gallery on about page
+-- */
+#gallery1 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery2 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery3 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery4 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery5 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery6 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery7 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery8 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery9 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery10 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery11 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery12 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery13 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery14 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery15 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery16 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+#gallery17 {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+}
+/* ------------------------ END OF GALLERY SUBSECTION -------------- */
+/* ------------------------ END OF SITE PHOTOS --------------------- */
