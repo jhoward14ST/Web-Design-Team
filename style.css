@@ -104,7 +104,7 @@ p {
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 70%;
+    width: 100%;
     height: 10%;
     padding: 0px;
     background-color: #FFCFEE;
@@ -157,14 +157,15 @@ nav {
 -- Date ------- Developer ---- Description
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added
 -- 2022-02-19 - Jared Howard – Added styling ID for page footer
+-- 2022-02-20 - Jared Howard – added a 0px padding for footers to keep them stuck at bottom
 -------------------------- END OF CHANGES ------------------------ */
 
 #footer {
     position: absolute;
-    bottom: 0px;
     width: 100%;
     height: 3%;
     padding: 0px;
+    bottom: 0px;
     background-color: #FFCFEE;
 }
 
@@ -176,33 +177,31 @@ nav {
 /* ---------------------- HOME.html STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
+-- 2022-02-20 - Jared Howard – Cut down on styling rules to make the sections work better
 -------------------------- END OF CHANGES ------------------------ */
 
-#aboutme {
-    position: absolute;
-    width: 100%;
+#welcome {
     height: 5%;
-    padding: 0px;
-    padding-top: 10%;
-    background-color: #FFCFEE;
-}
-
-#customerreviews {
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    padding: 0px;
+    padding: 4%;
     padding-top: 15%;
-    background-color: #FFCFEE;
+    padding-left: 50%;
 }
 
-#gallery {
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    padding: 0px;
-    padding-top: 10%;
+#ourservices {
+    text-align: center;
     background-color: #FFCFEE;
+    padding: 1%;
+}
+
+#mealpreparation {
+    width: 50%;
+    padding-left: 50%;
+}
+
+#catering {
+    width: 50%;
+    padding-left: 50%;
+    padding-bottom: 5%;
 }
 
 /* ------------------------ END OF HOME.html STYLING --------------------- */
@@ -213,39 +212,22 @@ nav {
 /* ---------------------- ABOUT.html STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
+-- 2022-02-20 - Jared Howard – Created and formatted aboutme section. Tried getting customer review section to be formatted nicely.
 -------------------------- END OF CHANGES ------------------------ */
 
-#welcome {
-    position: absolute;
-    width: 100%;
+#aboutme {
     height: 5%;
-    padding: 0px;
-    padding-top: 10%;
-    background-color: #FFCFEE;
+    padding: 4%;
+    padding-top: 15%;
+    padding-left: 50%;
 }
-#ourservices {
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    padding: 0px;
-    padding-top: 30%;
-    background-color: #FFCFEE;
+
+#customerreviews {
+
 }
-#mealpreparation {
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    padding: 0px;
-    padding-top: 35%%;
-    background-color: #FFCFEE;
-}
-#catering {
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    padding: 0px;
-    padding-top: 50%;
-    background-color: #FFCFEE;
+
+#gallery {
+
 }
 
 /* ------------------------ END OF ABOUT.html STYLING --------------------- */
