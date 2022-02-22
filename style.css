@@ -207,12 +207,16 @@ nav {
 /* ------------------------ END OF HOME.html STYLING --------------------- */
 
 /* ------------------------- ABOUT.html STYLING ---------------------------
+-- SOURCE: (gallery styling)
+https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html
+https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
 -- DESCRIPTION: Formatting section for the About page of our site
 -- */
 /* ---------------------- ABOUT.html STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
 -- 2022-02-20 - Jared Howard – Created and formatted aboutme section. Tried getting customer review section to be formatted nicely.
+-- 2022-02-22 - Jared Howard - Added some funcitonality for gallery display on About.html page. Subsection for that code created.
 -------------------------- END OF CHANGES ------------------------ */
 
 #aboutme {
@@ -226,9 +230,29 @@ nav {
 
 }
 
-#gallery {
+/* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
 
+figure {
+    display: inline-block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0px;
+    margin-right: 0px;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 30vw);
+    grid-gap: 1px;
+}
+/* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
 
 /* ------------------------ END OF ABOUT.html STYLING --------------------- */
 
@@ -239,6 +263,7 @@ nav {
 -- Date ------- Developer ---- Description
 -- 2022-02-15 - Jared Howard – Section created and first examples written.
 -- 2022-02-19 - Jared Howard – Some comments added and subsection created for a gallery.
+-- 2022-02-22 - Jared Howard – Replaced placeholder formatting for gallery pictures with comments. 
 -------------------------- END OF CHANGES ------------------------ */
 /* Used on home page*/
 #pic1 {
@@ -310,190 +335,71 @@ nav {
 -- DESCRIPTION: Formatting section for photos in gallery on about page
 -- */
 #gallery1 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+/* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery2 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery3 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery4 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery5 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery6 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery7 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery8 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery9 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery10 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery11 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery12 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery13 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery14 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery15 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery16 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
 #gallery17 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 /* ------------------------ END OF GALLERY SUBSECTION -------------- */
 /* ------------------------ END OF SITE PHOTOS --------------------- */
