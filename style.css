@@ -403,3 +403,24 @@ img {
 }
 /* ------------------------ END OF GALLERY SUBSECTION -------------- */
 /* ------------------------ END OF SITE PHOTOS --------------------- */
+
+/*-- FAQ --*/
+details > summary {
+  padding: 2px;
+  align-items: center;
+  width: 99px;
+  background-color: #D3D3D3;
+  border: none;
+  box-shadow: 1px 1px  #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #D3D3D3;
+  align-items: center;
+  padding: 2px;
+  margin: 0;
+  box-shadow: 1px 1px  #bbbbbb;
+}
+
+/*-- FAQ --*/
