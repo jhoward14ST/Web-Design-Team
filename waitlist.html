@@ -1,0 +1,148 @@
+<!--//////////////////////// HEADER ////////////////////////////////
+//
+// UWTacoma SET – TINFO 230 C: Foundations of Web Design and
+// Programming, Winter 2022
+// Programmer: Andrew Boupharath
+// Date: 2-23-2022
+// This page allows the customers to see the waitlist forms
+// and apply inputs in the waitlist forms.
+///////////////////////// CHANGE HISTORY /////////////////////////////
+//
+// Date ------- Developer ---- Description
+// 2-23-2022 - Andrew Boupharath - File started in HTML in Visual Studio Code. Develop the waitlist form.
+//
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>waitlist</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <h1>Waitlist</h1>
+  <body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <section>
+          <label for="name">First Name *</label>
+          <input type="text" name="name" id="name" required>
+      </section>
+
+      <section>
+        <label for="lastname">Last Name *</label>
+        <input type="text" name="lastname" id="lastname" required>
+    </section>
+
+    <section>
+        <label for="zip">Zip Code *</label>
+        <input type="text" name="zip" id="zip" required>
+    </section>
+
+      <section>
+        <label for="email">Email *</label>
+        <input type="email" name="email" id="email" required>
+      </section>
+
+      <br>
+
+        <p>I need enough meals for: *</p>
+        
+        <section>
+          <label for="aPerson">A Person</label>
+          <input type="radio" name="people" id="aPerson" value="aPerson">
+        </section>
+        <section>
+          <label for="aCouple">A Couple</label>
+          <input type="radio" name="people" id="aCouple" value="aCouple">
+        </section>
+        <section>
+            <label for="aFamily">A Family</label>
+            <input type="radio" name="people" id="aFamily" value="aFamily">
+          </section>
+
+          <br>
+
+          <p>Meals per day *</p>
+
+          <section>
+            <label for="1perperson">1 per person</label>
+            <input type="radio" name="perperson" id="1perperson" value="one">
+          </section>
+          <section>
+            <label for="2perperson">2 per person</label>
+            <input type="radio" name="perperson" id="2perperson" value="two">
+          </section>
+          <section>
+              <label for="3perperson">3 per person</label>
+              <input type="radio" name="perperson" id="3perperson" value="three">
+            </section>
+
+            <br>
+
+            <p>Dietary Preferences</p>
+
+            <section>
+                <label for="Shelfish">Shelfish</label>
+                <input type="checkbox" name="Shelfish" id="Shelfish">
+              </section>
+              <section>
+                <label for="Tree Nuts">Tree Nuts</label>
+                <input type="checkbox" name="Tree Nuts" id="Tree Nuts">
+              </section>
+              <label for="Eggs">Eggs</label>
+              <input type="checkbox" name="Eggs" id="Eggs">
+            </section>
+            <section>
+              <label for="Peanuts">Peanuts</label>
+              <input type="checkbox" name="Peanuts" id="Peanuts">
+            </section>
+            <label for="Wheat">Wheat</label>
+            <input type="checkbox" name="Wheat" id="Wheat">
+          </section>
+          <section>
+            <label for="Soy">Soy</label>
+            <input type="checkbox" name="Soy" id="Soy">
+          </section>
+              
+          <br>
+
+          <p>Style Preferences</p>
+
+          <section>
+            <label for="banana">Style 1</label>
+            <input type="checkbox" name="banana" id="banana">
+          </section>
+          <section>
+            <label for="apple">Style 2</label>
+            <input type="checkbox" name="apple" id="apple">
+          </section>
+          <label for="banana">Style 3</label>
+          <input type="checkbox" name="banana" id="banana">
+        </section>
+        <section>
+          <label for="apple">Style 4</label>
+          <input type="checkbox" name="apple" id="apple">
+        </section>
+        <label for="banana">Style 5</label>
+        <input type="checkbox" name="banana" id="banana">
+      </section>
+      <section>
+        <label for="apple">Style 6</label>
+        <input type="checkbox" name="apple" id="apple">
+      </section>
+      <section>
+        <label for="apple">Style 7</label>
+        <input type="checkbox" name="apple" id="apple">
+      </section>
+            
+      <br>
+
+      <p>Dislikes</p>
+
+      <textarea type="text" class="input-field textarea-field" placeholder="Message *">
+    </textarea>
+
+    <br>
+
+    <button type="button" class="btn">Submit</button>
+    
+  </body>
+</html>
