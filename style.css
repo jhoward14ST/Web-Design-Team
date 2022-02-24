@@ -88,35 +88,18 @@ p {
 -- Date ------- Developer ---- Description
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added. Added a green background to test color.
 -- 2022-02-19 - Jared Howard – Added styling IDs for the two header sections (#prc and #navigation)
+-- 2022-02-23 - Jared Howard - Redid styling and spacing for headers (again)
 -------------------------- END OF CHANGES ------------------------ */
 
-#prc {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 30%;
-    height: 10%;
-    padding: 0px;
-    background-color: #FFCFEE;
-}
-
 #navigation {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-    height: 10%;
-    padding: 0px;
-    background-color: #FFCFEE;
-}
-
-#navigation2 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 70%;
-    height: 10%;
-    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 70px);
+    grid-gap: 50px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
     background-color: #FFCFEE;
 }
 
@@ -126,8 +109,6 @@ nav {
     height: auto;
     text-align: center;
     display: block;
-    padding: 0 10px;
-    padding-top: 4%;
     background-color: #FFCFEE;
 }
 
@@ -158,13 +139,14 @@ nav {
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added
 -- 2022-02-19 - Jared Howard – Added styling ID for page footer
 -- 2022-02-20 - Jared Howard – added a 0px padding for footers to keep them stuck at bottom
+-- 2022-02-23 - Jared Howard - Changed spacing and padding to make it look much better
 -------------------------- END OF CHANGES ------------------------ */
 
 #footer {
-    position: absolute;
     width: 100%;
     height: 3%;
     padding: 0px;
+    padding-bottom: 20px;
     bottom: 0px;
     background-color: #FFCFEE;
 }
@@ -178,30 +160,61 @@ nav {
 -- Date ------- Developer ---- Description
 -- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
 -- 2022-02-20 - Jared Howard – Cut down on styling rules to make the sections work better
+-- 2022-02-23 - Jared Howard – Added styling using mostly grids to format homepage.
 -------------------------- END OF CHANGES ------------------------ */
 
 #welcome {
-    height: 5%;
-    padding: 4%;
-    padding-top: 15%;
-    padding-left: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 30vw);
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
-#ourservices {
+#services {
     text-align: center;
     background-color: #FFCFEE;
     padding: 1%;
 }
 
 #mealpreparation {
-    width: 50%;
-    padding-left: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 30vw);
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px; 
+    text-align: left;
 }
 
 #catering {
-    width: 50%;
-    padding-left: 50%;
-    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 30vw);
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+/* FILENAME: mealprep.jpeg */
+#profile {
+}
+
+/* FILENAME: mealprep.jpeg */
+#mealprep {
+}
+
+/* FILENAME: catering.jpg */
+#cateringpic {
 }
 
 /* ------------------------ END OF HOME.html STYLING --------------------- */
@@ -216,18 +229,31 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 -- Date ------- Developer ---- Description
 -- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
 -- 2022-02-20 - Jared Howard – Created and formatted aboutme section. Tried getting customer review section to be formatted nicely.
--- 2022-02-22 - Jared Howard - Added some funcitonality for gallery display on About.html page. Subsection for that code created.
+-- 2022-02-22 - Jared Howard - Added some functionality for gallery display on About.html page. Subsection for that code created.
+-- 2022-02-23 - Jared Howard - Switched to formatting with grids. Most changes involve spacing.
 -------------------------- END OF CHANGES ------------------------ */
 
 #aboutme {
-    height: 5%;
-    padding: 4%;
-    padding-top: 15%;
-    padding-left: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 30vw);
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 #customerreviews {
+    padding: 100px;
+}
 
+#customerreviewsgrid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 5vw);
+    grid-gap: 1px;
 }
 
 /* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
@@ -255,6 +281,88 @@ img {
 /* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
 
 /* ------------------------ END OF ABOUT.html STYLING --------------------- */
+
+/* ------------------------- CONTACT.html STYLING ---------------------------
+-- DESCRIPTION: Formatting section for the CONTACT page of our site
+-- */
+/* ---------------------- CONTACT.html STYLING CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-23 - Jared Howard - Section created and placeholder formatter added
+-------------------------- END OF CHANGES ------------------------ */
+
+#contact {
+    width: 100%;
+    height: 750px;
+}
+
+/* ------------------------ END OF CONTACT.html STYLING --------------------- */
+
+/* ------------------------- HOW-IT-WORKS.html STYLING ---------------------------
+-- DESCRIPTION: Formatting section for the how it works page of our site
+-- */
+/* ---------------------- HOW-IT-WORKS.html STYLING CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-23 - Jared Howard - Section created and placeholder formatter added
+-------------------------- END OF CHANGES ------------------------ */
+
+#howitworks {
+    width: 100%;
+    height: 750px;
+}
+
+/* ------------------------ END OF HOW-IT-WORKS.html STYLING --------------------- */
+
+/* ------------------------- FAQ.html STYLING ---------------------------
+-- DESCRIPTION: Formatting section for the CONTACT page of our site
+-- */
+/* ---------------------- FAQ.html STYLING CHANGES ----------------------
+-- Date ------- Developer ---- Description
+-- 2022-02-22 - Shweta Kushan - Initial drop downs and styling created
+-- 2022-02-23 - Jared Howard - Styling changed up 
+-------------------------- END OF CHANGES ------------------------ */
+
+#faq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 75vw);
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+summary {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+details {
+    padding-bottom: 25px;
+}
+
+details > summary {
+    background-color: #D3D3D3;
+    border: none;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+
+details > p {
+    background-color: #D3D3D3;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+    margin: 0;
+    box-shadow: 1px 1px #bbbbbb;
+}
+
+/* ------------------------ END OF FAQ.html STYLING --------------------- */
 
 /* ------------------------- SITE PHOTOS ---------------------------
 -- DESCRIPTION: Formatting section for site photos
@@ -331,96 +439,91 @@ img {
     background-attachment: fixed;
     padding: 10px;
 }
+
 /* ------------------------- GALLERY SUBSECTION ---------------------------
 -- DESCRIPTION: Formatting section for photos in gallery on about page
 -- */
+
+/* FILENAME: gallery1.jpeg */
 #gallery1 {
 /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery2.jpeg */
 #gallery2 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery3.jpeg */
 #gallery3 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery4.jpeg */
 #gallery4 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery5.jpeg */
 #gallery5 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery6.jpg */
 #gallery6 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery7.jpg */
 #gallery7 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery8.jpg */
 #gallery8 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery9.jpg */
 #gallery9 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
+
+/* FILENAME: gallery10.jpg */
 
 #gallery10 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery11.jpg */
 #gallery11 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery12.jpg */
 #gallery12 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery13.jpg */
 #gallery13 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery14.jpeg */
 #gallery14 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery15.jpeg */
 #gallery15 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
+/* FILENAME: gallery16.jpg */
 #gallery16 {
     /* Add styling as needed. Probably taken care of in About.html gallery subsection */
 }
 
-#gallery17 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
 /* ------------------------ END OF GALLERY SUBSECTION -------------- */
 /* ------------------------ END OF SITE PHOTOS --------------------- */
-
-/*-- FAQ --*/
-details > summary {
-  padding: 2px;
-  align-items: center;
-  width: 99px;
-  background-color: #D3D3D3;
-  border: none;
-  box-shadow: 1px 1px  #bbbbbb;
-  cursor: pointer;
-}
-
-details > p {
-  background-color: #D3D3D3;
-  align-items: center;
-  padding: 2px;
-  margin: 0;
-  box-shadow: 1px 1px  #bbbbbb;
-}
-
-/*-- FAQ --*/

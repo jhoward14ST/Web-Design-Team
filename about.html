@@ -23,6 +23,7 @@
 // 2022-02-19 - Jared Howard - Headers and footers changed up. Client requested a light pink color, using pink until I can find correct color.
 // 2022-02-20 - Jared Howard - Worked on some formatting for the about me and customer review section. All pages received curent header and footer update
 // 2022-02-22 - Jared Howard - Added some beginning code for gallery section. Need to add JS so user can toggle between pages.
+// 2022-02-23 - Jared Howard – Added styling using mostly grids to format homepage. Images added and spacing adjusted.
 //
 **************************** JAVASCRIPT ******************************
 **
@@ -41,11 +42,11 @@
 
 <body>
     <section id="navigation">
-        <section id="prc">
-            <h1 style="text-align:center; padding-top: 4%;">Pure Rae Cooking</h1>
+        <section>
+            <h1 style="padding-top: 7px;">Pure Rae Cooking</h1>
         </section>
-        <section id="navigation2">
-            <nav style="padding-top: 4%;">
+        <section>
+            <nav style="padding-top: 25px;">
                 <ul>
                     <li><a href="../TeamH/home.html">Home</a></li>
                     <li><a href="../TeamH/about.html">About</a></li>
@@ -58,38 +59,33 @@
     </section>
 
     <section id="aboutme">
-        <h1 padding-top: 10%;">About me: </h1>
-        <p>
-            Here's a bit about me and why I'm such a great chef!
-        </p>
+        <section>
+            <img id="profile" src="pics/profile.jpg" alt="Picture of dish">
+        </section>
+        <section>
+            <h1>About me: </h1>
+            <p>
+                Here's a bit about me and why I'm such a great chef!
+            </p>
+        </section>
     </section>
 
     <section id="customerreviews">
         <h1 style="text-align:center;">Customer Reviews </h1>
-        <p style="padding-left: 35%; text-align: center">
-            <q style="padding-left: 35%; text-align: center">
-                Best food ever
-            </q><br />
-            - Quotesource
-        </p>
-        <p style="padding-left: 35%; text-align: center">
-            <q style="padding-left: 35%; text-align: center">
-                I suck at cooking. Made my life so much easier.
-            </q><br />
-            - Quotesource
-        </p>
-        <p style="padding-right: 35%; text-align: center">
-            <q style="padding-right: 35%; text-align: center">
-                Told her I needed to hit my macros and she came in clutch.
-            </q>
-            - Quotesource
-        </p><br />
-        <p style="padding-right: 35%; text-align: center">
-            <q style="padding-right: 35%; text-align: center">
-                Made food that both my family and me enjoyed.
-            </q><br />
-            - Quotesource
-        </p>
+        <section id="customerreviewsgrid">
+            <p>
+                Best food ever. <br /> - Quotesource
+            </p>
+            <p>
+                I suck at cooking. Made my life so much easier. <br /> - Quotesource
+            </p>
+            <p>
+                Told her I needed to hit my macros and she came in clutch. <br /> - Quotesource
+            </p>
+            <p>
+                Made food that both my family and me enjoyed. <br /> - Quotesource
+            </p>
+        </section>
     </section>
 
     <section id="gallery">
@@ -97,25 +93,22 @@
         <!-- https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html -->
         <!-- https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ -->
         <!-- TODO: Add in JS and ability to toggle between images -->
-        <section id="gallery">
-            <figure>
-                <img src="img_5terre.jpg" alt="Picture of dish">
-            </figure>
-            <figure>
-                <img src="img_forest.jpg" alt="Picture of dish">
-            </figure>
-            <figure>
-                <img src="img_lights.jpg" alt="Picture of dish">
-            </figure>
-            <figure>
-                <img src="img_mountains.jpg" alt="Picture of dish">
-            </figure>
-        </section>
-
+        <figure>
+            <img id="gallery1" src="pics/gallery1.jpeg" alt="Picture of dish">
+        </figure>
+        <figure>
+            <img id="gallery2" src="pics/gallery2.jpeg" alt="Picture of dish">
+        </figure>
+        <figure>
+            <img id="gallery2" src="pics/gallery3.jpeg" alt="Picture of dish">
+        </figure>
+        <figure>
+            <img id="gallery4" src="pics/gallery4.jpeg" alt="Picture of dish">
+        </figure>
     </section>
 
     <nav id="footer">
-        <ul>
+        <ul style="padding-top: 15px;">
             <li><a href="../TeamH/about.html">About</a></li>
             <li><a href="../TeamH/contact.html">Contact</a></li>
             <li><a href="https://www.instagram.com/pure.rae.cooking">Follow</a></li>
