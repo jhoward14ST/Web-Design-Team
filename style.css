@@ -288,11 +288,32 @@ img {
 /* ---------------------- CONTACT.html STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-23 - Jared Howard - Section created and placeholder formatter added
+-- 2022-02-24 - Jared Howard - IDs created for styling and spacing purposes
 -------------------------- END OF CHANGES ------------------------ */
 
 #contact {
     width: 100%;
     height: 750px;
+}
+
+#info {
+    background-color: #FFCFEE;
+}
+
+#spacer {
+    padding-left: 30px;
+}
+
+#contactform {
+    padding-left: 30px;
+    padding-bottom: 50px;
+    width: 50%;
+}
+
+#waitlistform {
+    padding-left: 30px;
+    padding-bottom: 50px;
+    width: 50%;
 }
 
 /* ------------------------ END OF CONTACT.html STYLING --------------------- */
@@ -303,17 +324,61 @@ img {
 /* ---------------------- HOW-IT-WORKS.html STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-23 - Jared Howard - Section created and placeholder formatter added
+-- 2022-02-24 - Zulalureman Ebro - How it works code submitted
+-- 2022-02-24 - Jared Howard - Styling adjusted for styling and spacing purposes
 -------------------------- END OF CHANGES ------------------------ */
 
-#howitworks {
-    width: 100%;
-    height: 750px;
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+.text-block {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 10%;
+    background-color: #EEEEEE;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    border: black;
+    border-style: solid;
+}
+
+#hiw {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* ------------------------ END OF HOW-IT-WORKS.html STYLING --------------------- */
 
 /* ------------------------- FAQ.html STYLING ---------------------------
--- DESCRIPTION: Formatting section for the CONTACT page of our site
+-- DESCRIPTION: Formatting section for the FAQ page of our site
 -- */
 /* ---------------------- FAQ.html STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
@@ -372,72 +437,19 @@ details > p {
 -- 2022-02-15 - Jared Howard – Section created and first examples written.
 -- 2022-02-19 - Jared Howard – Some comments added and subsection created for a gallery.
 -- 2022-02-22 - Jared Howard – Replaced placeholder formatting for gallery pictures with comments. 
+-- 2022-02-24 - Jared Howard – pic1-3 IDs added as placeholders if needed
 -------------------------- END OF CHANGES ------------------------ */
-/* Used on home page*/
+/* FILENAME: pic1.png */
 #pic1 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+
 }
-/* Used on home page*/
+/* FILENAME: pic2.jpg */
 #pic2 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+
 }
-/* Used on home page*/
+/* FILENAME: pic3.png */
 #pic3 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-/* Used on How it Works page*/
-#pic4 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-/* Used on How it Works page*/
-#pic5 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
-}
-/* Used on How it Works page*/
-#pic6 {
-    align-self: center;
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10px;
+
 }
 
 /* ------------------------- GALLERY SUBSECTION ---------------------------

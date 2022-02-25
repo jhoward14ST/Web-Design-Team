@@ -7,10 +7,9 @@
 // # Zulalureman Ebro
 // # Jared Howard
 // # Shweta Kushan
-// 2022-00-00 – EXAMPLE.html
-// This page allows customers to see where pureraecooking delivers,
-// allows them to fill out a contact
-// form with their information and what service they are interested in
+// 2022-02-24 – CONTACT.html
+// Programmer: Andrew Boupharath
+// This page allows customers to contact the client and fill out a waitlist form
 //
 ///////////////////////// CHANGE HISTORY /////////////////////////////
 //
@@ -19,6 +18,8 @@
 // 2022-02-19 - Jared Howard - Headers and footers changed up. Client requested a light pink color, using pink until I can find correct color
 // 2022-02-20 - Jared Howard - All pages received curent header and footer update
 // 2022-02-23 - Jared Howard - Headers and footers received another update. Filler section added.
+// 2022-02-24 - Andrew Boupharath - File started in HTML in Visual Studio Code. Developed the contact form. Code commited for upload to site.
+// 2022-02-24 - Jared Howard - Andrew's code added and cleaned up. Several section IDs created for styling.
 //
 **************************** JAVASCRIPT ******************************
 **
@@ -27,11 +28,10 @@
 **-->
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <!-- Jared: base stylesheet link added and functional -->
     <link href="../TeamH/style.css" rel="stylesheet" />
-    <meta charset="utf-8" />
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" name="viewport" content="IE=edge, width=device-width, initial-scale=1.0" />
     <title>Contact</title>
 </head>
 
@@ -52,11 +52,110 @@
             </nav>
         </section>
     </section>
-    <!-- ANDREW your contact form code will be posted below this comment -->
 
-    <section id="contact">
-        <p> This will contain content later.</p>
+    <section class="contact-box">
+        <form id="contactform">
+            <section id="info">
+                <section id="spacer">
+                    <h1 style="text-align: center; font-size: 30px; padding-top: 10px; "> Contact </h1>
+                    <input type="text" class="input-field" placeholder="Your Name *">
+                    <br />
+                    <input type="text" class="input-field" placeholder="Your Email *">
+                    <br />
+                    <input type="text" class="input-field" placeholder="Subject *">
+                    <br />
+                    <textarea type="text" class="input-field textarea-field" placeholder="Message *"></textarea>
+                    <br />
+                    <button type="button" class="btn">Submit</button>
+                </section>
+            </section>
+        </form>
     </section>
+
+    <form id="waitlistform" action="results.html" method="GET" enctype="multipart/form-data">
+        <section id="info">
+            <section id="spacer">
+                <h1 style="text-align: center; font-size: 30px; padding-top: 10px; ">Waitlist </h1>
+                <label for="name">First Name *</label>
+                <input type="text" name="name" id="name" required>
+                <br />
+                <label for="lastname">Last Name *</label>
+                <input type="text" name="lastname" id="lastname" required>
+                <br />
+                <label for="zip">Zip Code *</label>
+                <input type="text" name="zip" id="zip" required>
+                <br />
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email" required>
+                <br />
+                <p>I need enough meals for: *</p>
+                <label for="aPerson">A Person</label>
+                <input type="radio" name="people" id="aPerson" value="aPerson">
+                <br />
+                <label for="aCouple">A Couple</label>
+                <input type="radio" name="people" id="aCouple" value="aCouple">
+                <br />
+                <label for="aFamily">A Family</label>
+                <input type="radio" name="people" id="aFamily" value="aFamily">
+                <br />
+                <p>Meals per day *</p>
+                <label for="1perperson">1 per person</label>
+                <input type="radio" name="perperson" id="1perperson" value="one">
+                <br />
+                <label for="2perperson">2 per person</label>
+                <input type="radio" name="perperson" id="2perperson" value="two">
+                <br />
+                <label for="3perperson">3 per person</label>
+                <input type="radio" name="perperson" id="3perperson" value="three">
+                <br />
+                <p>Dietary Preferences</p>
+                <label for="Shelfish">Shelfish</label>
+                <input type="checkbox" name="Shelfish" id="Shelfish">
+                <br />
+                <label for="Tree Nuts">Tree Nuts</label>
+                <input type="checkbox" name="Tree Nuts" id="Tree Nuts">
+                <br />
+                <label for="Eggs">Eggs</label>
+                <input type="checkbox" name="Eggs" id="Eggs">
+                <br />
+                <label for="Peanuts">Peanuts</label>
+                <input type="checkbox" name="Peanuts" id="Peanuts">
+                <br />
+                <label for="Wheat">Wheat</label>
+                <input type="checkbox" name="Wheat" id="Wheat">
+                <br />
+                <label for="Soy">Soy</label>
+                <input type="checkbox" name="Soy" id="Soy">
+                <br />
+                <p>Style Preferences</p>
+                <label for="banana">Style 1</label>
+                <input type="checkbox" name="banana" id="banana">
+                <br />
+                <label for="apple">Style 2</label>
+                <input type="checkbox" name="apple" id="apple">
+                <br />
+                <label for="banana">Style 3</label>
+                <input type="checkbox" name="banana" id="banana">
+                <br />
+                <label for="apple">Style 4</label>
+                <input type="checkbox" name="apple" id="apple">
+                <br />
+                <label for="banana">Style 5</label>
+                <input type="checkbox" name="banana" id="banana">
+                <br />
+                <label for="apple">Style 6</label>
+                <input type="checkbox" name="apple" id="apple">
+                <br />
+                <label for="apple">Style 7</label>
+                <input type="checkbox" name="apple" id="apple">
+                <br />
+                <p>Dislikes</p>
+                <textarea type="text" class="input-field textarea-field" placeholder="Message *"></textarea>
+                <br />
+                <button type="button" class="btn">Submit</button>
+            </section>
+        </section>
+    </form>
 
     <nav id="footer">
         <ul style="padding-top: 15px;">
