@@ -13,13 +13,14 @@
 //
 ///////////////////////// CHANGE HISTORY /////////////////////////////
 //
-// Date ------- Developer ---- Description
+// Date         Developer      Description
 // 2022-02-17 – Jared Howard - File created and committed to GitHub. Header code started, a href functionality added for navigation. Footer code added.
 // 2022-02-19 - Jared Howard - Headers and footers changed up. Client requested a light pink color, using pink until I can find correct color
 // 2022-02-20 - Jared Howard - All pages received curent header and footer update
 // 2022-02-23 - Jared Howard - Headers and footers received another update. Filler section added.
 // 2022-02-24 - Andrew Boupharath - File started in HTML in Visual Studio Code. Developed the contact form. Code commited for upload to site.
 // 2022-02-24 - Jared Howard - Andrew's code added and cleaned up. Several section IDs created for styling.
+// 2022-02-25 - Jared Howard - Some validation errors and warnings fixed.
 //
 **************************** JAVASCRIPT ******************************
 **
@@ -31,7 +32,9 @@
 <html lang="en">
 <head>
     <link href="../TeamH/style.css" rel="stylesheet" />
-    <meta charset="utf-8" http-equiv="X-UA-Compatible" name="viewport" content="IE=edge, width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <!-- <meta width="device-width" initial-scale="1.0" /> -->
     <title>Contact</title>
 </head>
 
@@ -55,8 +58,8 @@
 
     <section class="contact-box">
         <form id="contactform">
-            <section id="info">
-                <section id="spacer">
+            <section id="infosec1">
+                <section id="spacersec1">
                     <h1 style="text-align: center; font-size: 30px; padding-top: 10px; "> Contact </h1>
                     <input type="text" class="input-field" placeholder="Your Name *">
                     <br />
@@ -64,7 +67,7 @@
                     <br />
                     <input type="text" class="input-field" placeholder="Subject *">
                     <br />
-                    <textarea type="text" class="input-field textarea-field" placeholder="Message *"></textarea>
+                    <textarea class="input-field" placeholder="Message *"></textarea>
                     <br />
                     <button type="button" class="btn">Submit</button>
                 </section>
@@ -73,8 +76,8 @@
     </section>
 
     <form id="waitlistform" action="results.html" method="GET" enctype="multipart/form-data">
-        <section id="info">
-            <section id="spacer">
+        <section id="infosec2">
+            <section id="spacersec2">
                 <h1 style="text-align: center; font-size: 30px; padding-top: 10px; ">Waitlist </h1>
                 <label for="name">First Name *</label>
                 <input type="text" name="name" id="name" required>
@@ -112,8 +115,8 @@
                 <label for="Shelfish">Shelfish</label>
                 <input type="checkbox" name="Shelfish" id="Shelfish">
                 <br />
-                <label for="Tree Nuts">Tree Nuts</label>
-                <input type="checkbox" name="Tree Nuts" id="Tree Nuts">
+                <label for="TreeNuts">Tree Nuts</label>
+                <input type="checkbox" name="Tree Nuts" id="TreeNuts">
                 <br />
                 <label for="Eggs">Eggs</label>
                 <input type="checkbox" name="Eggs" id="Eggs">
@@ -135,22 +138,22 @@
                 <input type="checkbox" name="apple" id="apple">
                 <br />
                 <label for="banana">Style 3</label>
-                <input type="checkbox" name="banana" id="banana">
+                <input type="checkbox" name="orange" id="orange">
                 <br />
                 <label for="apple">Style 4</label>
-                <input type="checkbox" name="apple" id="apple">
+                <input type="checkbox" name="lime" id="lime">
                 <br />
                 <label for="banana">Style 5</label>
-                <input type="checkbox" name="banana" id="banana">
+                <input type="checkbox" name="grape" id="grape">
                 <br />
                 <label for="apple">Style 6</label>
-                <input type="checkbox" name="apple" id="apple">
+                <input type="checkbox" name="strawberry" id="strawberry">
                 <br />
                 <label for="apple">Style 7</label>
-                <input type="checkbox" name="apple" id="apple">
+                <input type="checkbox" name="blueberry" id="blueberry">
                 <br />
                 <p>Dislikes</p>
-                <textarea type="text" class="input-field textarea-field" placeholder="Message *"></textarea>
+                <textarea class="input-field textarea-field" placeholder="Message *"></textarea>
                 <br />
                 <button type="button" class="btn">Submit</button>
             </section>

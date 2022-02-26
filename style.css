@@ -296,11 +296,19 @@ img {
     height: 750px;
 }
 
-#info {
+#infosec1 {
     background-color: #FFCFEE;
 }
 
-#spacer {
+#infosec2 {
+    background-color: #FFCFEE;
+}
+
+#spacersec1 {
+    padding-left: 30px;
+}
+
+#spacersec2 {
     padding-left: 30px;
 }
 
@@ -367,7 +375,23 @@ img {
     border-style: solid;
 }
 
-#hiw {
+#hiwsec1 {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#hiwsec2 {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#hiwsec3 {
     width: 75%;
     height: auto;
     object-fit: cover;
