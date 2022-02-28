@@ -16,6 +16,12 @@
 -- 2022-02-15 – Jared Howard - Stylesheet started
 -- 2022-02-18 - Jared Howard - Styling for headers and footers completed. Worked around div elements by using some sections
 -- 2022-02-19 - Jared Howard - Added a subsection for gallery photos and moved photo formatting to bottom
+-- 2022-02-27 - Jared Howard - Header change history hasn't been updated since 19th, there's too much to include here.
+-- For details on changes, see the specific section change history
+--
+-- SOURCES:
+-- https://www.w3schools.com/csS/css_font_google.asp
+-- https://fonts.googleapis.com/css?family=Trirong
 --*/
 
 /* ------------------------- TEXT STYLING ---------------------------
@@ -24,15 +30,16 @@
 /* ---------------------- TEXT STYLING CHANGES ----------------------
 -- Date ------- Developer ---- Description
 -- 2022-02-17 - Jared Howard – Section created and text styling added for body and h1-4
+-- 2022-02-27 - Jared Howard - Added subsection for a google font and changed all font-family tags
 -------------------------- END OF CHANGES ------------------------ */
 
 a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
     color: black;
 }
 
     a:link, a:visited, a:hover, a:active {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Trirong", serif;
         color: black;
         padding: 5px;
         text-align: center;
@@ -40,7 +47,7 @@ a {
     }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
     margin: 0;
     padding: 0;
     background-color: #EEEEEE;
@@ -59,25 +66,67 @@ header {
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
 }
 
 h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
 }
 
 h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
 }
 
 h4 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
 }
 
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
     color: black;
 }
+
+
+/* ------------------------ GOOGLE SUBSECTION STYLING --------- */
+/* -- SOURCES:
+-- https://www.w3schools.com/csS/css_font_google.asp
+-- https://fonts.googleapis.com/css?family=Trirong
+-- */
+
+/* thai */
+@font-face {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/trirong/v9/7r3GqXNgp8wxdOdOn58o2JZg.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/trirong/v9/7r3GqXNgp8wxdOdOn4Qo2JZg.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/trirong/v9/7r3GqXNgp8wxdOdOn4Uo2JZg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/trirong/v9/7r3GqXNgp8wxdOdOn4so2A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ------------------------ END OF GOOGLE SUBSECTION STYLING --------- */
 
 /* ------------------------ END OF TEXT STYLING --------------------- */
 
@@ -89,22 +138,18 @@ p {
 -- 2022-02-17 - Jared Howard – Section created and navigation text style added. Added a green background to test color.
 -- 2022-02-19 - Jared Howard – Added styling IDs for the two header sections (#prc and #navigation)
 -- 2022-02-23 - Jared Howard - Redid styling and spacing for headers (again)
+-- 2022-02-27 - Jared Howard - Increased header size and PRC font
 -------------------------- END OF CHANGES ------------------------ */
 
 #navigation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 70px);
-    grid-gap: 50px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
     text-align: center;
     background-color: #FFCFEE;
 }
 
 nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trirong", serif;
     width: 100%;
     height: auto;
     text-align: center;
@@ -113,7 +158,7 @@ nav {
 }
 
     nav ul {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Trirong", serif;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -123,7 +168,7 @@ nav {
     }
 
         nav ul li {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: "Trirong", serif;
             display: inline-block;
             color: black;
             background-color: #FFCFEE;
@@ -161,18 +206,18 @@ nav {
 -- 2022-02-19 - Jared Howard – Created section and started IDs for each section I created
 -- 2022-02-20 - Jared Howard – Cut down on styling rules to make the sections work better
 -- 2022-02-23 - Jared Howard – Added styling using mostly grids to format homepage.
+-- 2022-02-27 - Jared Howard - Increased size of rows after new font was added, ajusted grids and pictures to display properly
 -------------------------- END OF CHANGES ------------------------ */
 
 #welcome {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 30vw);
-    grid-gap: 20px;
     padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 50px;
     text-align: center;
+    align-items: center;
 }
 
 #services {
@@ -181,40 +226,50 @@ nav {
     padding: 1%;
 }
 
+#homeinfo {
+
+}
+
 #mealpreparation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 30vw);
-    grid-gap: 50px;
-    padding-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 50px; 
-    text-align: left;
-}
-
-#catering {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 30vw);
-    grid-gap: 50px;
     padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 50px;
     text-align: left;
+    align-items: center;
 }
 
-/* FILENAME: mealprep.jpeg */
+#catering {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    text-align: left;
+    align-items: center;
+}
+
+/* FILENAME: profile.png */
 #profile {
+    width: 85%;
+    height: auto;
 }
 
-/* FILENAME: mealprep.jpeg */
+/* FILENAME: mealprep.png */
 #mealprep {
+    padding-bottom: 10%;
+    width: 85%;
+    height: auto;
 }
 
 /* FILENAME: catering.jpg */
 #cateringpic {
+    padding-bottom: 10%;
+    width: 85%;
+    height: auto;
 }
 
 /* ------------------------ END OF HOME.html STYLING --------------------- */
@@ -231,13 +286,12 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 -- 2022-02-20 - Jared Howard – Created and formatted aboutme section. Tried getting customer review section to be formatted nicely.
 -- 2022-02-22 - Jared Howard - Added some functionality for gallery display on About.html page. Subsection for that code created.
 -- 2022-02-23 - Jared Howard - Switched to formatting with grids. Most changes involve spacing.
+-- 2022-02-27 - Jared Howard - Adjusted grids so the page displays properly when resizing
 -------------------------- END OF CHANGES ------------------------ */
 
 #aboutme {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 30vw);
-    grid-gap: 20px;
     padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
@@ -245,15 +299,13 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 }
 
 #customerreviews {
-    padding: 100px;
+    padding: 5%;
 }
 
 #customerreviewsgrid {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 5vw);
-    grid-gap: 1px;
 }
 
 /* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
@@ -289,6 +341,7 @@ img {
 -- Date ------- Developer ---- Description
 -- 2022-02-23 - Jared Howard - Section created and placeholder formatter added
 -- 2022-02-24 - Jared Howard - IDs created for styling and spacing purposes
+-- 2022-02-27 - Jared Howard - Redid styling and spacing. Added Text explanations from Squarespace site
 -------------------------- END OF CHANGES ------------------------ */
 
 #contact {
@@ -298,30 +351,63 @@ img {
 
 #infosec1 {
     background-color: #FFCFEE;
+    border: black;
+    border-style: solid;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 #infosec2 {
     background-color: #FFCFEE;
+    border: black;
+    border-style: solid;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 #spacersec1 {
-    padding-left: 30px;
+    padding-bottom: 10%;
 }
 
 #spacersec2 {
-    padding-left: 30px;
+    padding-bottom: 5%;
+}
+
+#contactspacer {
+    padding-top: 4%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#contactintro {
+    text-align: center;
+    background-color: #FFCFEE;
+    padding: 1%;
 }
 
 #contactform {
-    padding-left: 30px;
-    padding-bottom: 50px;
-    width: 50%;
+    padding-top: 4%;
+    padding-left: 30%;
+    padding-bottom: 5%;
+    width: 70%;
+}
+
+#waitlistspacer {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#waitlistintro {
+    text-align: center;
+    background-color: #FFCFEE;
+    padding: 1%;
 }
 
 #waitlistform {
-    padding-left: 30px;
-    padding-bottom: 50px;
-    width: 50%;
+    padding-top: 4%;
+    padding-left: 30%;
+    padding-bottom: 5%;
+    width: 70%;
 }
 
 /* ------------------------ END OF CONTACT.html STYLING --------------------- */
@@ -334,6 +420,7 @@ img {
 -- 2022-02-23 - Jared Howard - Section created and placeholder formatter added
 -- 2022-02-24 - Zulalureman Ebro - How it works code submitted
 -- 2022-02-24 - Jared Howard - Styling adjusted for styling and spacing purposes
+-- 2022-02-27 - Jared Howard - Added a section for the cooking POV upon request of client
 -------------------------- END OF CHANGES ------------------------ */
 
 * {
@@ -369,14 +456,28 @@ img {
     background-color: #EEEEEE;
     color: black;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     padding: 15px;
     border: black;
     border-style: solid;
 }
 
+#hiwintro {
+    text-align: center;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 25%;
+}
+
+#hiwintrocolor {
+    background-color: #FFCFEE;
+    padding: 2%;
+    width: 60%;
+}
+
 #hiwsec1 {
-    width: 75%;
+    width: 65%;
     height: auto;
     object-fit: cover;
     padding-left: 50px;
@@ -384,7 +485,7 @@ img {
 }
 
 #hiwsec2 {
-    width: 75%;
+    width: 65%;
     height: auto;
     object-fit: cover;
     padding-left: 50px;
@@ -392,7 +493,7 @@ img {
 }
 
 #hiwsec3 {
-    width: 75%;
+    width: 65%;
     height: auto;
     object-fit: cover;
     padding-left: 50px;
@@ -408,6 +509,7 @@ img {
 -- Date ------- Developer ---- Description
 -- 2022-02-22 - Shweta Kushan - Initial drop downs and styling created
 -- 2022-02-23 - Jared Howard - Styling changed up 
+-- 2022-02-27 - Jared Howard - Changed background color and style/spacing of headings
 -------------------------- END OF CHANGES ------------------------ */
 
 #faq {
@@ -434,22 +536,22 @@ details {
     padding-bottom: 25px;
 }
 
-details > summary {
-    background-color: #D3D3D3;
-    border: none;
-    box-shadow: 1px 1px #bbbbbb;
-    cursor: pointer;
-}
+    details > summary {
+        background-color: #FFCFEE;
+        border: none;
+        box-shadow: 1px 1px #bbbbbb;
+        cursor: pointer;
+    }
 
-details > p {
-    background-color: #D3D3D3;
-    align-items: center;
-    padding-right: 15px;
-    padding-left: 60px;
-    padding-bottom: 15px;
-    margin: 0;
-    box-shadow: 1px 1px #bbbbbb;
-}
+    details > p {
+        background-color: #FFCFEE;
+        align-items: center;
+        padding-right: 15px;
+        padding-left: 60px;
+        padding-bottom: 15px;
+        margin: 0;
+        box-shadow: 1px 1px #bbbbbb;
+    }
 
 /* ------------------------ END OF FAQ.html STYLING --------------------- */
 

@@ -7,7 +7,7 @@
 // # Zulalureman Ebro
 // # Jared Howard
 // # Shweta Kushan
-// 2022-02-24 – CONTACT.html
+// 2022-02-24 – contact.html
 // Programmer: Andrew Boupharath
 // This page allows customers to contact the client and fill out a waitlist form
 //
@@ -21,6 +21,7 @@
 // 2022-02-24 - Andrew Boupharath - File started in HTML in Visual Studio Code. Developed the contact form. Code commited for upload to site.
 // 2022-02-24 - Jared Howard - Andrew's code added and cleaned up. Several section IDs created for styling.
 // 2022-02-25 - Jared Howard - Some validation errors and warnings fixed.
+// 2022-02-27 - Jared Howard - Changed background color and style/spacing of headings
 //
 **************************** JAVASCRIPT ******************************
 **
@@ -41,10 +42,10 @@
 <body>
     <section id="navigation">
         <section>
-            <h1 style="padding-top: 7px;">Pure Rae Cooking</h1>
+            <p style="font-size: 30px;"><b>Pure Rae Cooking</b></p>
         </section>
         <section>
-            <nav style="padding-top: 25px;">
+            <nav style="padding-top: 6%;">
                 <ul>
                     <li><a href="../TeamH/home.html">Home</a></li>
                     <li><a href="../TeamH/about.html">About</a></li>
@@ -56,18 +57,27 @@
         </section>
     </section>
 
+    <section id="contactspacer">
+        <section id="contactintro">
+            <h1 style="text-align: center;">INQUIRE HERE</h1>
+            <p>
+                For any other inquiries, enter your information and we will get back to you as soon as possible.
+            </p>
+        </section>
+    </section>
+
     <section class="contact-box">
         <form id="contactform">
             <section id="infosec1">
                 <section id="spacersec1">
-                    <h1 style="text-align: center; font-size: 30px; padding-top: 10px; "> Contact </h1>
+                    <h1 style="font-size: 30px;"> Contact </h1>
                     <input type="text" class="input-field" placeholder="Your Name *">
                     <br />
                     <input type="text" class="input-field" placeholder="Your Email *">
                     <br />
-                    <input type="text" class="input-field" placeholder="Subject *">
+                    <input type="text" class="input-field" placeholder="Subject *" style="width: 100%; height: 100%">
                     <br />
-                    <textarea class="input-field" placeholder="Message *"></textarea>
+                    <textarea class="input-field" placeholder="Message *" style="width: 100%; height: 100%"></textarea>
                     <br />
                     <button type="button" class="btn">Submit</button>
                 </section>
@@ -75,10 +85,20 @@
         </form>
     </section>
 
+    <section id="waitlistspacer">
+        <section id="waitlistintro">
+            <h1 style="text-align: center;">JOIN THE WAITLIST</h1>
+            <p>
+                At the moment we are unable to accept any new clients due to demand.
+                Enter your information, fill out the optional preference form and we will contact you when we are accepting new clientele.
+            </p>
+        </section>
+    </section>
+
     <form id="waitlistform" action="results.html" method="GET" enctype="multipart/form-data">
         <section id="infosec2">
             <section id="spacersec2">
-                <h1 style="text-align: center; font-size: 30px; padding-top: 10px; ">Waitlist </h1>
+                <h1 style="font-size: 30px;">Waitlist </h1>
                 <label for="name">First Name *</label>
                 <input type="text" name="name" id="name" required>
                 <br />
@@ -91,69 +111,24 @@
                 <label for="email">Email *</label>
                 <input type="email" name="email" id="email" required>
                 <br />
-                <p>I need enough meals for: *</p>
-                <label for="aPerson">A Person</label>
-                <input type="radio" name="people" id="aPerson" value="aPerson">
+                <p>What type of cuisine do you typically enjoy?  *</p>
+                <textarea class="input-field textarea-field" placeholder="I like: *" style="width: 100%; height: 100%"></textarea>
                 <br />
-                <label for="aCouple">A Couple</label>
-                <input type="radio" name="people" id="aCouple" value="aCouple">
+                <p>Any major diet restrictions or allergies? *</p>
+                <textarea class="input-field textarea-field" placeholder="Restrictions and allergies *" style="width: 100%; height: 100%"></textarea>
                 <br />
-                <label for="aFamily">A Family</label>
-                <input type="radio" name="people" id="aFamily" value="aFamily">
+                <p>How many meals per week are you interested in receiving? *</p>
+                <label for="2meals">2</label>
+                <input type="radio" name="perperson" id="2meals" value="two">
                 <br />
-                <p>Meals per day *</p>
-                <label for="1perperson">1 per person</label>
-                <input type="radio" name="perperson" id="1perperson" value="one">
+                <label for="3meals">3</label>
+                <input type="radio" name="perperson" id="3meals" value="three">
                 <br />
-                <label for="2perperson">2 per person</label>
-                <input type="radio" name="perperson" id="2perperson" value="two">
+                <label for="4meals">4</label>
+                <input type="radio" name="perperson" id="4meals" value="four">
                 <br />
-                <label for="3perperson">3 per person</label>
-                <input type="radio" name="perperson" id="3perperson" value="three">
-                <br />
-                <p>Dietary Preferences</p>
-                <label for="Shelfish">Shelfish</label>
-                <input type="checkbox" name="Shelfish" id="Shelfish">
-                <br />
-                <label for="TreeNuts">Tree Nuts</label>
-                <input type="checkbox" name="Tree Nuts" id="TreeNuts">
-                <br />
-                <label for="Eggs">Eggs</label>
-                <input type="checkbox" name="Eggs" id="Eggs">
-                <br />
-                <label for="Peanuts">Peanuts</label>
-                <input type="checkbox" name="Peanuts" id="Peanuts">
-                <br />
-                <label for="Wheat">Wheat</label>
-                <input type="checkbox" name="Wheat" id="Wheat">
-                <br />
-                <label for="Soy">Soy</label>
-                <input type="checkbox" name="Soy" id="Soy">
-                <br />
-                <p>Style Preferences</p>
-                <label for="banana">Style 1</label>
-                <input type="checkbox" name="banana" id="banana">
-                <br />
-                <label for="apple">Style 2</label>
-                <input type="checkbox" name="apple" id="apple">
-                <br />
-                <label for="banana">Style 3</label>
-                <input type="checkbox" name="orange" id="orange">
-                <br />
-                <label for="apple">Style 4</label>
-                <input type="checkbox" name="lime" id="lime">
-                <br />
-                <label for="banana">Style 5</label>
-                <input type="checkbox" name="grape" id="grape">
-                <br />
-                <label for="apple">Style 6</label>
-                <input type="checkbox" name="strawberry" id="strawberry">
-                <br />
-                <label for="apple">Style 7</label>
-                <input type="checkbox" name="blueberry" id="blueberry">
-                <br />
-                <p>Dislikes</p>
-                <textarea class="input-field textarea-field" placeholder="Message *"></textarea>
+                <label for="5meals">5</label>
+                <input type="radio" name="perperson" id="5meals" value="five">
                 <br />
                 <button type="button" class="btn">Submit</button>
             </section>
