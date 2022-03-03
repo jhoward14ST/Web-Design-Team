@@ -1,4 +1,5 @@
-﻿<!--//////////////////////// HEADER ////////////////////////////////
+﻿﻿
+<!--//////////////////////// HEADER ////////////////////////////////
 //
 // UWTacoma SET – TINFO 230 C: Foundations of Web Design and
 // Programming, Winter 2022
@@ -14,6 +15,10 @@
 //
 ///////////////////////// CHANGE HISTORY /////////////////////////////
 //
+// SOURCES:
+// Social media and email icons https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-envelope
+// Social media and email icons https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+//
 // Date         Developer      Description
 // 2022-02-17 – Jared Howard - File created and committed to GitHub. Header code started, a href functionality added for navigation. Footer code added.
 // 2022-02-19 - Jared Howard - Headers and footers changed up. Client requested a light pink color, using pink until I can find correct color
@@ -21,11 +26,12 @@
 // 2022-02-23 - Jared Howard - Headers and footers received another update. Filler section added. Shweta's code was added and tested. Needs some fixing, drop downs overflow.
 // 2022-02-25 - Jared Howard - Some validation errors and warnings fixed.
 // 2022-02-27 - Jared Howard - Redid styling and spacing. Added Text explanations from Squarespace site
+// 2022-03-02 - Shweta Kushan - Created and added social media icons
 //
 **************************** JAVASCRIPT ******************************
 **
 ** id: FUNCTIONNAME - Description
-**
+** fa-brands fa-instagram
 **-->
 <!DOCTYPE html>
 
@@ -49,14 +55,16 @@
 					<li><a href="../TeamH/how-it-works.html">How it works</a></li>
 					<li><a href="../TeamH/faq.html">FAQ</a></li>
 					<li><a href="../TeamH/contact.html">Contact</a></li>
+					<li><a href="#" class="fa fa-instagram"></a></li>
+					<li><a href="#" class="fa fa-envelope"></a></li>
 				</ul>
 			</nav>
 		</section>
 	</section>
 
-	<section id="faq">
+	<section id="faqsec1">
+		<h1 style="font-size: 30px; text-align: center;"> Meal Prep</h1>
 		<section>
-			<h1 style="font-size: 30px; text-align: center;"> Meal Prep</h1>
 			<!-- QUESTION 1 -->
 			<details>
 				<summary>Do you work around dietary restrictions?</summary><hr />
@@ -159,8 +167,11 @@
 				</p>
 			</details>
 		</section>
+	</section>
+
+	<section id="faqsec2">
+		<h1 style="font-size: 30px; text-align: center;"> Catering</h1>
 		<section>
-			<h1 style="font-size: 30px; text-align: center;"> Catering</h1>
 			<!-- QUESTION 1 -->
 			<details>
 				<summary>What type of events do you cater for? </summary><hr />
@@ -189,14 +200,12 @@
 		</section>
 	</section>
 
-	<footer>
-		<nav id="footer">
-			<ul style="padding-top: 15px;">
-				<li><a href="../TeamH/about.html">About</a></li>
-				<li><a href="../TeamH/contact.html">Contact</a></li>
-				<li><a href="https://www.instagram.com/pure.rae.cooking">Follow</a></li>
-			</ul>
-		</nav>
-	</footer>
+	<nav id="footer">
+		<ul style="padding-top: 15px;">
+			<li><a href="../TeamH/about.html">About</a></li>
+			<li><a href="../TeamH/contact.html">Contact</a></li>
+			<li><a href="https://www.instagram.com/pure.rae.cooking">Follow</a></li>
+		</ul>
+	</nav>
 </body>
 </html>

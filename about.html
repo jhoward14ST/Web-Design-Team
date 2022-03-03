@@ -25,11 +25,14 @@
 // 2022-02-22 - Jared Howard - Added some beginning code for gallery section. Need to add JS so user can toggle between pages.
 // 2022-02-23 - Jared Howard – Added styling using mostly grids to format homepage. Images added and spacing adjusted.
 // 2022-02-25 - Jared Howard - Some validation errors and warnings fixed.
-// 2022-02-27 - Jared Howard - Grids adjusted so page displays properly during resizing
+// 2022-02-27 - Jared Howard - Grids adjusted so page displays properly during resizing.
+// 2022-03-02 - Andrew Boupharath - File started in HTML and Javascript in Visual Studio Code. Developed the image slider.
 //
 **************************** JAVASCRIPT ******************************
 **
-** id: FUNCTIONNAME - Description
+** id: plusSlides(n) - Runs functionality for gallery
+** id: currentSlide(n) - Runs functionality for gallery
+** id: showSlides(n) - Runs functionality for gallery
 **
 **-->
 <!DOCTYPE html>
@@ -42,6 +45,7 @@
 </head>
 
 <body>
+
     <section id="navigation">
         <section>
             <p style="font-size: 30px;"><b>Pure Rae Cooking</b></p>
@@ -54,6 +58,8 @@
                     <li><a href="../TeamH/how-it-works.html">How it works</a></li>
                     <li><a href="../TeamH/faq.html">FAQ</a></li>
                     <li><a href="../TeamH/contact.html">Contact</a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-envelope"></a></li>
                 </ul>
             </nav>
         </section>
@@ -89,12 +95,12 @@
         </section>
     </section>
 
-    <section id="gallery">
+    <!--<section id="gallery">-->
         <!-- For reference: code inspiration came from these sites -->
         <!-- https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html -->
         <!-- https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ -->
         <!-- TODO: Add in JS and ability to toggle between images -->
-        <figure>
+        <!--<figure>
             <img id="gallery1" src="pics/gallery1.jpeg" alt="Picture of dish">
         </figure>
         <figure>
@@ -106,7 +112,58 @@
         <figure>
             <img id="gallery4" src="pics/gallery4.jpeg" alt="Picture of dish">
         </figure>
+    </section>-->
+
+    <section id="gallery" class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <img src="pics/gallery1.jpeg" alt="Picture of dish">
+        <img src="pics/gallery2.jpeg" alt="Picture of dish">
+        <img src="pics/gallery3.jpeg" alt="Picture of dish">
+        <img src="pics/gallery4.jpeg" alt="Picture of dish">
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!--<img src="pics/gallery5.jpeg" alt="Picture of dish">
+        <img src="pics/gallery6.jpg" alt="Picture of dish">
+        <img src="pics/gallery7.jpg" alt="Picture of dish">
+        <img src="pics/gallery8.jpg" alt="Picture of dish">
+        <img src="pics/gallery9.jpg" alt="Picture of dish">
+        <img src="pics/gallery10.jpg" alt="Picture of dish">
+        <img src="pics/gallery11.jpg" alt="Picture of dish">
+        <img src="pics/gallery12.jpg" alt="Picture of dish">
+        <img src="pics/gallery13.jpg" alt="Picture of dish">
+        <img src="pics/gallery14.jpeg" alt="Picture of dish">
+        <img src="pics/gallery15.jpeg" alt="Picture of dish">
+        <img src="pics/gallery16.jpg" alt="Picture of dish">-->
     </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        // *********** JS plusSlides(n) ***********
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // *********** JS currentSlide(n) ***********
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        // *********** JS showSlides(n) ***********
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
     <nav id="footer">
         <ul style="padding-top: 15px;">
