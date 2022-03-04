@@ -31,6 +31,7 @@
 -- Date ------- Developer ---- Description
 -- 2022-02-17 - Jared Howard – Section created and text styling added for body and h1-4
 -- 2022-02-27 - Jared Howard - Added subsection for a google font and changed all font-family tags
+-- 2022-03-03 - Jared Howard - Changed color
 -------------------------- END OF CHANGES ------------------------ */
 
 a {
@@ -56,13 +57,13 @@ body {
 footer {
     width: 100%;
     padding: 10px;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
 }
 
 header {
     width: 100%;
     padding: 10px;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
 }
 
 h1 {
@@ -139,13 +140,14 @@ p {
 -- 2022-02-19 - Jared Howard – Added styling IDs for the two header sections (#prc and #navigation)
 -- 2022-02-23 - Jared Howard - Redid styling and spacing for headers (again)
 -- 2022-02-27 - Jared Howard - Increased header size and PRC font
+-- 2022-03-03 - Jared Howard - Changed color
 -------------------------- END OF CHANGES ------------------------ */
 
 #navigation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
 }
 
 nav {
@@ -154,7 +156,7 @@ nav {
     height: auto;
     text-align: center;
     display: block;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
 }
 
     nav ul {
@@ -164,14 +166,14 @@ nav {
         list-style: none;
         position: relative;
         color: black;
-        background-color: #FFCFEE;
+        background-color: #FFDFED;
     }
 
         nav ul li {
             font-family: "Trirong", serif;
             display: inline-block;
             color: black;
-            background-color: #FFCFEE;
+            background-color: #FFDFED;
         }
 
 /* ------------------------ END OF HEADER STYLING --------------------- */
@@ -185,6 +187,7 @@ nav {
 -- 2022-02-19 - Jared Howard – Added styling ID for page footer
 -- 2022-02-20 - Jared Howard – added a 0px padding for footers to keep them stuck at bottom
 -- 2022-02-23 - Jared Howard - Changed spacing and padding to make it look much better
+-- 2022-03-03 - Jared Howard - Changed color
 -------------------------- END OF CHANGES ------------------------ */
 
 #footer {
@@ -193,7 +196,7 @@ nav {
     padding: 0px;
     padding-bottom: 20px;
     bottom: 0px;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
 }
 
 /* ------------------------ END OF FOOTER STYLING --------------------- */
@@ -207,6 +210,7 @@ nav {
 -- 2022-02-20 - Jared Howard – Cut down on styling rules to make the sections work better
 -- 2022-02-23 - Jared Howard – Added styling using mostly grids to format homepage.
 -- 2022-02-27 - Jared Howard - Increased size of rows after new font was added, ajusted grids and pictures to display properly
+-- 2022-03-03 - Jared Howard - Changed styling and added some background color for text
 -------------------------- END OF CHANGES ------------------------ */
 
 #welcome {
@@ -222,12 +226,8 @@ nav {
 
 #services {
     text-align: center;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     padding: 1%;
-}
-
-#homeinfo {
-
 }
 
 #mealpreparation {
@@ -241,6 +241,11 @@ nav {
     align-items: center;
 }
 
+#mpreptxt {
+    padding: 3%;
+    background-color: #E9E5E9;
+}
+
 #catering {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -250,6 +255,11 @@ nav {
     padding-bottom: 50px;
     text-align: left;
     align-items: center;
+}
+
+#catertxt {
+    padding: 3%;
+    background-color: #E9E5E9;
 }
 
 /* FILENAME: profile.png */
@@ -354,7 +364,7 @@ img {
     padding: 16px;
     margin-top: -22px;
     color: black;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -390,7 +400,7 @@ img {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -455,7 +465,7 @@ img {
 }
 
 #infosec1 {
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     border: black;
     border-style: solid;
     padding-right: 15%;
@@ -463,7 +473,7 @@ img {
 }
 
 #infosec2 {
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     border: black;
     border-style: solid;
     padding-right: 15%;
@@ -479,14 +489,15 @@ img {
 }
 
 #contactspacer {
-    padding-top: 4%;
     padding-left: 30%;
     padding-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #contactintro {
     text-align: center;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     padding: 1%;
 }
 
@@ -500,11 +511,13 @@ img {
 #waitlistspacer {
     padding-left: 30%;
     padding-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 #waitlistintro {
     text-align: center;
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     padding: 1%;
 }
 
@@ -526,6 +539,7 @@ img {
 -- 2022-02-24 - Zulalureman Ebro - How it works code submitted
 -- 2022-02-24 - Jared Howard - Styling adjusted for styling and spacing purposes
 -- 2022-02-27 - Jared Howard - Added a section for the cooking POV upon request of client
+-- 2022-03-03 - Jared Howard - Removed container styling (no longer needed). Changed layout and styling.
 -------------------------- END OF CHANGES ------------------------ */
 
 * {
@@ -545,26 +559,19 @@ img {
     display: table;
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 100px;
-    padding-bottom: 10px;
-}
-
 .text-block {
-    position: absolute;
-    top: 50%;
+    top: 45%;
     left: 40%;
     right: 10%;
+    padding-right: 2%;
+    padding-left: 2%;
     background-color: #EEEEEE;
     color: black;
     text-align: center;
-    font-size: 18px;
-    padding: 15px;
+    font-size: 16px;
     border: black;
     border-style: solid;
+    border-width: thin;
 }
 
 #hiwintro {
@@ -576,33 +583,42 @@ img {
 }
 
 #hiwintrocolor {
-    background-color: #FFCFEE;
+    background-color: #FFDFED;
     padding: 2%;
     width: 60%;
 }
 
 #hiwsec1 {
-    width: 65%;
-    height: auto;
-    object-fit: cover;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-gap: 2%;
+    text-align: left;
+    align-items: center;
 }
 
 #hiwsec2 {
-    width: 65%;
-    height: auto;
-    object-fit: cover;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-gap: 2%;
+    text-align: left;
+    align-items: center;
 }
 
 #hiwsec3 {
-    width: 65%;
-    height: auto;
-    object-fit: cover;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-gap: 2%;
+    text-align: left;
+    align-items: center;
 }
 
 /* ------------------------ END OF HOW-IT-WORKS.html STYLING --------------------- */
@@ -616,6 +632,7 @@ img {
 -- 2022-02-23 - Jared Howard - Styling changed up 
 -- 2022-02-27 - Jared Howard - Changed background color and style/spacing of headings
 -- 2022-03-02 - Jared Howard - Fixed drop down menu overlapping problem
+-- 2022-03-03 - Jared Howard - Changed color
 -------------------------- END OF CHANGES ------------------------ */
 
 #faqsec1 {
@@ -654,14 +671,14 @@ details {
 }
 
     details > summary {
-        background-color: #FFCFEE;
+        background-color: #FFDFED;
         border: none;
         box-shadow: 1px 1px #bbbbbb;
         cursor: pointer;
     }
 
     details > p {
-        background-color: #FFCFEE;
+        background-color: #E9E5E9;
         align-items: center;
         padding-right: 15px;
         padding-left: 60px;

@@ -1,5 +1,4 @@
-﻿﻿
-<!--//////////////////////// HEADER ////////////////////////////////
+﻿<!--//////////////////////// HEADER ////////////////////////////////
 //
 // UWTacoma SET – TINFO 230 C: Foundations of Web Design and
 // Programming, Winter 2022
@@ -16,8 +15,13 @@
 ///////////////////////// CHANGE HISTORY /////////////////////////////
 //
 // SOURCES:
-// Social media and email icons https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-envelope
-// Social media and email icons https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+// Social media icon:
+//		* https://github.com/zloirock/core-js
+//		* License: http://rock.mit-license.org
+//		* © 2019 Denis Pushkarev (zloirock.ru)
+// Alternatives to div tags https://stackoverflow.com/questions/22019493/what-to-use-instead-of-div-elements-in-html5
+// Drop downs https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_details_css
+// Removing overlapping https://stackoverflow.com/questions/44292662/how-to-stop-css-dropdown-menu-from-overlapping-footer
 //
 // Date         Developer      Description
 // 2022-02-17 – Jared Howard - File created and committed to GitHub. Header code started, a href functionality added for navigation. Footer code added.
@@ -27,11 +31,12 @@
 // 2022-02-25 - Jared Howard - Some validation errors and warnings fixed.
 // 2022-02-27 - Jared Howard - Redid styling and spacing. Added Text explanations from Squarespace site
 // 2022-03-02 - Shweta Kushan - Created and added social media icons
+// 2022-03-03 - Shweta Kushan - Instagram icons updated to open into new tab
+// 2022-03-03 - Jared Howard - Changed styling and added some background color for text
 //
 **************************** JAVASCRIPT ******************************
 **
-** id: FUNCTIONNAME - Description
-** fa-brands fa-instagram
+** name: ionicons: Gives functionality and appearance to Instagram button
 **-->
 <!DOCTYPE html>
 
@@ -43,6 +48,9 @@
 </head>
 
 <body>
+	<!-- *********** JS ionicons *********** -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<section id="navigation">
 		<section>
 			<p style="font-size: 30px;"><b>Pure Rae Cooking</b></p>
@@ -55,8 +63,11 @@
 					<li><a href="../TeamH/how-it-works.html">How it works</a></li>
 					<li><a href="../TeamH/faq.html">FAQ</a></li>
 					<li><a href="../TeamH/contact.html">Contact</a></li>
-					<li><a href="#" class="fa fa-instagram"></a></li>
-					<li><a href="#" class="fa fa-envelope"></a></li>
+					<li>
+						<a href="https://www.instagram.com/pure.rae.cooking" target="_blank">
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</section>
@@ -158,7 +169,6 @@
 			<details>
 				<summary>Do I keep the ice packs, cooler bag, and plastic containers?</summary><hr />
 				<p>
-					Do I keep the ice packs, cooler bag, and plastic containers?
 					Pure Rae Cooking is an eco-friendly business. We ask that you return the cooler bag/ice packs
 					each week on your delivery day by placing it outside your front door for pickup. We also ask that
 					you kindly wash/wipe out plastic containers so that we may reuse them up to 10 times before
@@ -176,7 +186,6 @@
 			<details>
 				<summary>What type of events do you cater for? </summary><hr />
 				<p>
-					What type of events do you cater for?
 					Private dinner parties, birthdays, baby showers, engagement parties, bachelor/bachelorette parties - or let's chat about your vision and go from there!
 				</p>
 			</details>
@@ -184,7 +193,7 @@
 			<details>
 				<summary>How many people can you cater for? </summary><hr />
 				<p>
-					How many people can you cater for?
+					?
 					Small-Medium sized gatherings are our jam. At this time, we are able to cater events with up to 40 people.
 				</p>
 			</details>
@@ -192,7 +201,6 @@
 			<details>
 				<summary>How does it work? Can I customize the menu? </summary><hr />
 				<p>
-					How does it work? Can I customize the menu?
 					Of course! Our job is to bring your vision to life by listening to your wish list and building from there.
 					We will connect via phone/email to discuss your vision and then provide menu options, decor inspiration, etc.
 				</p>
