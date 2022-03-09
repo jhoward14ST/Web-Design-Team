@@ -34,7 +34,10 @@
 // 2022-03-02 - Shweta Kushan - Created and added social media icons
 // 2022-03-03 - Shweta Kushan - Instagram icons updated to open into new tab
 // 2022-03-03 - Jared Howard - Changed styling and added some background color for text
-// 2022-03-08 - Andrew Boupharath - Making sure page is validated
+// 2022-03-02 - Andrew Boupharath - File started in HTML and Javascript in Visual Studio Code. Develop the image slider.
+// 2022-03-06 - Andrew Boupharath - Fixing button images moving left and right
+// 2022-03-08 - Andrew Booupharath - Remade the image slider with the better and improve image slider with HTML CSS and Javascript
+// and making sure page is validated
 //
 **************************** JAVASCRIPT ******************************
 **
@@ -110,75 +113,108 @@
         </section>
     </section>
 
-    <!--<section id="gallery">-->
-    <!-- For reference: code inspiration came from these sites -->
-    <!-- https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html -->
-    <!-- https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ -->
-    <!-- TODO: Add in JS and ability to toggle between images -->
-    <!--<figure>
-            <img id="gallery1" src="pics/gallery1.jpeg" alt="Picture of dish">
-        </figure>
-        <figure>
-            <img id="gallery2" src="pics/gallery2.jpeg" alt="Picture of dish">
-        </figure>
-        <figure>
-            <img id="gallery3" src="pics/gallery3.jpeg" alt="Picture of dish">
-        </figure>
-        <figure>
-            <img id="gallery4" src="pics/gallery4.jpeg" alt="Picture of dish">
-        </figure>
-    </section>-->
-
-    <section id="gallery" class="slideshow-container">
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <img src="pics/gallery1.jpeg" alt="Picture of dish">
-        <img src="pics/gallery2.jpeg" alt="Picture of dish">
-        <img src="pics/gallery3.jpeg" alt="Picture of dish">
-        <img src="pics/gallery4.jpeg" alt="Picture of dish">
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-        <!--<img src="pics/gallery5.jpeg" alt="Picture of dish">
-        <img src="pics/gallery6.jpg" alt="Picture of dish">
-        <img src="pics/gallery7.jpg" alt="Picture of dish">
-        <img src="pics/gallery8.jpg" alt="Picture of dish">
-        <img src="pics/gallery9.jpg" alt="Picture of dish">
-        <img src="pics/gallery10.jpg" alt="Picture of dish">
-        <img src="pics/gallery11.jpg" alt="Picture of dish">
-        <img src="pics/gallery12.jpg" alt="Picture of dish">
-        <img src="pics/gallery13.jpg" alt="Picture of dish">
-        <img src="pics/gallery14.jpeg" alt="Picture of dish">
-        <img src="pics/gallery15.jpeg" alt="Picture of dish">
-        <img src="pics/gallery16.jpg" alt="Picture of dish">-->
+    <section class="product">
+        <button class="pre-btn"><img src="pics/arrow.png" alt="arrow"></button> <button class="nxt-btn"><img src="pics/arrow.png" alt="arrow"></button>
+        <section class="product-container">
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery1.jpeg" class="product-thumb" alt="1">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery2.jpeg" class="product-thumb" alt="2">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery3.jpeg" class="product-thumb" alt="3">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery4.jpeg" class="product-thumb" alt="4">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery5.jpeg" class="product-thumb" alt="5">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery6.jpg" class="product-thumb" alt="6">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery7.jpg" class="product-thumb" alt="7">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery8.jpg" class="product-thumb" alt="8">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery9.jpg" class="product-thumb" alt="9">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery10.jpg" class="product-thumb" alt="10">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery11.jpg" class="product-thumb" alt="11">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery12.jpg" class="product-thumb" alt="12">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery13.jpg" class="product-thumb" alt="13">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery14.jpeg" class="product-thumb" alt="14">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery15.jpeg" class="product-thumb" alt="15">
+                </section>
+                <section class="product-info"></section>
+            </section>
+            <section class="product-card">
+                <section class="product-image">
+                    <img src="pics/gallery16.jpg" class="product-thumb" alt="16">
+                </section>
+                <section class="product-info"></section>
+            </section>
+        </section>
+        <script src="script.js"></script>
     </section>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        // *********** JS plusSlides(n) ***********
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        // *********** JS currentSlide(n) ***********
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        // *********** JS showSlides(n) ***********
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
     <nav id="footer">
         <ul style="padding-top: 15px;">

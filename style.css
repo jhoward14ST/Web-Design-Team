@@ -320,130 +320,102 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 
 /* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
 
-figure {
-    display: inline-block;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0px;
-    margin-right: 0px;
+/* Button */
+button:hover span {
+    width: 100%;
 }
 
-img {
+button:hover {
+    border: none;
+}
+
+/* PRODUCT */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 4%;
+}
+
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+    .product-container::-webkit-scrollbar {
+        display: none;
+    }
+
+.product-card {
+    flex: 0 0 auto;
+    width: 25%;
+    height: auto;
+    margin-right: 5px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 30vw);
-    grid-gap: 1px;
+.product-card:hover .card-btn {
+    opacity: 1;
 }
 
-.mySlides {
-    display: none
+.card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
 }
 
-img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: black;
-    background-color: #FFDFED;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #E9E5E9 100%);
+    cursor: pointer;
+    z-index: 8;
 }
 
-/* Position the "next button" to the right */
-.next {
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+    .pre-btn img,
+    .nxt-btn img {
+        opacity: 0.2;
     }
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #FFDFED;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-    .active, .dot:hover {
-        background-color: #717171;
+    .pre-btn:hover img,
+    .nxt-btn:hover img {
+        opacity: 1;
     }
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {
-        font-size: 11px
-    }
-}
 
 /* ------------------------- ABOUT.html GALLERY SUBSECTION STYLING -------- */
 
@@ -701,101 +673,12 @@ details {
 -------------------------- END OF CHANGES ------------------------ */
 /* FILENAME: pic1.png */
 #pic1 {
-
 }
 /* FILENAME: pic2.jpg */
 #pic2 {
-
 }
 /* FILENAME: pic3.png */
 #pic3 {
-
 }
 
-/* ------------------------- GALLERY SUBSECTION ---------------------------
--- DESCRIPTION: Formatting section for photos in gallery on about page
--- */
-
-/* FILENAME: gallery1.jpeg */
-#gallery1 {
-/* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery2.jpeg */
-#gallery2 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery3.jpeg */
-#gallery3 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery4.jpeg */
-#gallery4 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery5.jpeg */
-#gallery5 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery6.jpg */
-#gallery6 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery7.jpg */
-#gallery7 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery8.jpg */
-#gallery8 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery9.jpg */
-#gallery9 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery10.jpg */
-
-#gallery10 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery11.jpg */
-#gallery11 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery12.jpg */
-#gallery12 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery13.jpg */
-#gallery13 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery14.jpeg */
-#gallery14 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery15.jpeg */
-#gallery15 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* FILENAME: gallery16.jpg */
-#gallery16 {
-    /* Add styling as needed. Probably taken care of in About.html gallery subsection */
-}
-
-/* ------------------------ END OF GALLERY SUBSECTION -------------- */
 /* ------------------------ END OF SITE PHOTOS --------------------- */
