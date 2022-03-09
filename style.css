@@ -431,6 +431,28 @@ button:hover {
 -- 2022-02-27 - Jared Howard - Redid styling and spacing. Added Text explanations from Squarespace site
 -------------------------- END OF CHANGES ------------------------ */
 
+.inquireButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: absolute;
+}
+
+.waitlistButton {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: absolute;
+}
+
 #contact {
     width: 100%;
     height: 750px;
